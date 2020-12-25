@@ -1,0 +1,14 @@
+server:
+  port: 18800
+  tomcat:
+    uri-encoding: UTF-8
+---
+spring:
+  profiles:
+    active: @profile.active@
+  application:
+    name: @artifactId@
+  aop:
+    proxy-target-class: true
+  jackson:
+    default-property-inclusion: NON_NULL

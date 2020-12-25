@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    ## 数据库用户名和密码，由于sqLite3的开源版并没有数据库加密功能，所以无需配置数据库账号密码
+    driver-class-name: org.sqlite.JDBC
+    ## 数据库地址 启动springboot项目，项目目录下多了一个test.db文件。此为数据库本地文件
+    url: jdbc:sqlite:test.db
+  jpa:
+    ## 显示数据库操作记录
+    show-sql: true
